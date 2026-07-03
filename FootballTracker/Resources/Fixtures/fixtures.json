@@ -1,0 +1,156 @@
+{
+  "competitions": [
+    { "id": "world-cup-2026", "name": "FIFA World Cup 2026", "icon": "🏆", "status": "Live", "hasTeams": true },
+    { "id": "champions-league", "name": "Champions League", "icon": "⚽️", "status": "Offseason", "hasTeams": false },
+    { "id": "womens-champions-league", "name": "Women's Champions League", "icon": "⭐️", "status": "Offseason", "hasTeams": false },
+    { "id": "premier-league", "name": "Premier League", "icon": "🏴", "status": "Offseason", "hasTeams": true },
+    { "id": "all-soccer", "name": "All Soccer", "icon": "🏃", "status": "Live", "hasTeams": true },
+    { "id": "formula-1", "name": "Formula 1", "icon": "🏎️", "status": "Live", "hasTeams": false },
+    { "id": "mens-tennis", "name": "Men's Tennis", "icon": "🎾", "status": "Live", "hasTeams": false },
+    { "id": "womens-tennis", "name": "Women's Tennis", "icon": "🎾", "status": "Live", "hasTeams": false },
+    { "id": "pga-tour", "name": "PGA Tour", "icon": "⛳️", "status": "Live", "hasTeams": false },
+    { "id": "nhl", "name": "NHL", "icon": "🏒", "status": "Offseason", "hasTeams": true },
+    { "id": "nba", "name": "NBA", "icon": "🏀", "status": "Offseason", "hasTeams": true },
+    { "id": "wnba", "name": "WNBA", "icon": "🏀", "status": "Live", "hasTeams": true }
+  ],
+  "matches": [
+    {
+      "id": "brazil-japan-2026",
+      "competition": "FIFA World Cup 2026",
+      "round": "Round of 32",
+      "status": "finished",
+      "kickoff": "2026-06-30T00:00:00Z",
+      "homeTeam": { "id": "brazil", "name": "Brazil", "shortName": "Brazil", "emblem": "🇧🇷", "primaryColorHex": "#F7D417", "secondaryColorHex": "#0072CE" },
+      "awayTeam": { "id": "japan", "name": "Japan", "shortName": "Japan", "emblem": "🇯🇵", "primaryColorHex": "#005BAC", "secondaryColorHex": "#BC002D" },
+      "homeScore": 2,
+      "awayScore": 1,
+      "isFavorite": true
+    },
+    {
+      "id": "portugal-croatia-2026",
+      "competition": "FIFA World Cup 2026",
+      "round": "Round of 32",
+      "status": "scheduled",
+      "kickoff": "2026-07-03T06:00:00Z",
+      "homeTeam": { "id": "portugal", "name": "Portugal", "shortName": "Portugal", "emblem": "🇵🇹", "primaryColorHex": "#DA291C", "secondaryColorHex": "#006A44" },
+      "awayTeam": { "id": "croatia", "name": "Croatia", "shortName": "Croatia", "emblem": "🇭🇷", "primaryColorHex": "#005BAA", "secondaryColorHex": "#F0122D" },
+      "homeScore": null,
+      "awayScore": null,
+      "isFavorite": true
+    },
+    {
+      "id": "argentina-cabo-verde-2026",
+      "competition": "FIFA World Cup 2026",
+      "round": "Round of 32",
+      "status": "scheduled",
+      "kickoff": "2026-07-04T05:00:00Z",
+      "homeTeam": { "id": "argentina", "name": "Argentina", "shortName": "Argentina", "emblem": "🇦🇷", "primaryColorHex": "#75AADB", "secondaryColorHex": "#FFFFFF" },
+      "awayTeam": { "id": "cabo-verde", "name": "Cabo Verde", "shortName": "Cabo Verde", "emblem": "🇨🇻", "primaryColorHex": "#003893", "secondaryColorHex": "#CF2027" },
+      "homeScore": null,
+      "awayScore": null,
+      "isFavorite": true
+    },
+    {
+      "id": "brazil-tbd-2026",
+      "competition": "FIFA World Cup 2026",
+      "round": "Round of 16",
+      "status": "scheduled",
+      "kickoff": "2026-07-06T03:00:00Z",
+      "homeTeam": { "id": "brazil", "name": "Brazil", "shortName": "Brazil", "emblem": "🇧🇷", "primaryColorHex": "#F7D417", "secondaryColorHex": "#0072CE" },
+      "awayTeam": { "id": "tbd", "name": "TBD", "shortName": "TBD", "emblem": "●", "primaryColorHex": "#35523A", "secondaryColorHex": "#35523A" },
+      "homeScore": null,
+      "awayScore": null,
+      "isFavorite": true
+    }
+  ],
+  "details": [
+    {
+      "id": "brazil-japan-2026",
+      "match": {
+        "id": "brazil-japan-2026",
+        "competition": "FIFA World Cup 2026",
+        "round": "Round of 32",
+        "status": "finished",
+        "kickoff": "2026-06-30T00:00:00Z",
+        "homeTeam": { "id": "brazil", "name": "Brazil", "shortName": "Brazil", "emblem": "🇧🇷", "primaryColorHex": "#F7D417", "secondaryColorHex": "#0072CE" },
+        "awayTeam": { "id": "japan", "name": "Japan", "shortName": "Japan", "emblem": "🇯🇵", "primaryColorHex": "#005BAC", "secondaryColorHex": "#BC002D" },
+        "homeScore": 2,
+        "awayScore": 1,
+        "isFavorite": true
+      },
+      "goals": [
+        { "teamID": "brazil", "player": "Casemiro", "minute": "56" },
+        { "teamID": "japan", "player": "K. Sano", "minute": "29" },
+        { "teamID": "brazil", "player": "G. Martinelli", "minute": "90+6" }
+      ],
+      "stats": [
+        { "label": "Possession %", "home": 65, "away": 35 },
+        { "label": "Shots", "home": 19, "away": 5 },
+        { "label": "Shots on Goal", "home": 7, "away": 2 },
+        { "label": "Corner Kicks", "home": 6, "away": 2 },
+        { "label": "Total Passes", "home": 656, "away": 276 },
+        { "label": "Passing Accuracy %", "home": 88, "away": 82 },
+        { "label": "Offsides", "home": 1, "away": 0 },
+        { "label": "Fouls", "home": 4, "away": 13 },
+        { "label": "Yellow Cards", "home": 2, "away": 3 },
+        { "label": "Red Cards", "home": 0, "away": 0 }
+      ],
+      "homeFormation": {
+        "label": "4-3-3",
+        "players": [
+          { "id": "vinicius", "name": "Vinícius Júnior", "number": 7, "position": "A", "x": 0.18, "y": 0.12, "avatar": "🙂", "events": [] },
+          { "id": "cunha", "name": "Matheus Cunha", "number": 9, "position": "A", "x": 0.50, "y": 0.12, "avatar": "😄", "events": ["↓"] },
+          { "id": "rayan", "name": "Rayan", "number": 26, "position": "A", "x": 0.82, "y": 0.12, "avatar": "🙂", "events": [] },
+          { "id": "paqueta", "name": "Lucas Paquetá", "number": 20, "position": "M", "x": 0.18, "y": 0.34, "avatar": "🙂", "events": ["↓"] },
+          { "id": "casemiro", "name": "Casemiro", "number": 5, "position": "M", "x": 0.50, "y": 0.34, "avatar": "🙂", "events": ["🟨", "⚽️"] },
+          { "id": "bruno", "name": "Bruno Guimarães", "number": 8, "position": "M", "x": 0.82, "y": 0.34, "avatar": "🙂", "events": ["↓"] },
+          { "id": "douglas", "name": "Douglas Santos", "number": 16, "position": "D", "x": 0.14, "y": 0.64, "avatar": "🙂", "events": [] },
+          { "id": "gabriel", "name": "Gabriel", "number": 3, "position": "D", "x": 0.38, "y": 0.64, "avatar": "🙂", "events": [] },
+          { "id": "marquinhos", "name": "Marquinhos", "number": 4, "position": "D", "x": 0.62, "y": 0.64, "avatar": "🙂", "events": [] },
+          { "id": "danilo", "name": "Danilo", "number": 13, "position": "D", "x": 0.86, "y": 0.64, "avatar": "🙂", "events": ["🟨"] },
+          { "id": "alisson", "name": "Alisson", "number": 1, "position": "GK", "x": 0.50, "y": 0.88, "avatar": "🙂", "events": [] }
+        ]
+      },
+      "awayFormation": {
+        "label": "3-4-2-1",
+        "players": [
+          { "id": "sano", "name": "K. Sano", "number": 29, "position": "A", "x": 0.5, "y": 0.14, "avatar": "🙂", "events": ["⚽️"] },
+          { "id": "j1", "name": "Minamino", "number": 10, "position": "M", "x": 0.30, "y": 0.30, "avatar": "🙂", "events": [] },
+          { "id": "j2", "name": "Kubo", "number": 20, "position": "M", "x": 0.70, "y": 0.30, "avatar": "🙂", "events": [] },
+          { "id": "j3", "name": "Ito", "number": 14, "position": "M", "x": 0.14, "y": 0.48, "avatar": "🙂", "events": [] },
+          { "id": "j4", "name": "Endo", "number": 6, "position": "M", "x": 0.38, "y": 0.48, "avatar": "🙂", "events": [] },
+          { "id": "j5", "name": "Tanaka", "number": 17, "position": "M", "x": 0.62, "y": 0.48, "avatar": "🙂", "events": ["🟨"] },
+          { "id": "j6", "name": "Sugawara", "number": 2, "position": "M", "x": 0.86, "y": 0.48, "avatar": "🙂", "events": [] },
+          { "id": "j7", "name": "Tomiyasu", "number": 16, "position": "D", "x": 0.25, "y": 0.70, "avatar": "🙂", "events": [] },
+          { "id": "j8", "name": "Itakura", "number": 4, "position": "D", "x": 0.50, "y": 0.70, "avatar": "🙂", "events": [] },
+          { "id": "j9", "name": "Machida", "number": 22, "position": "D", "x": 0.75, "y": 0.70, "avatar": "🙂", "events": [] },
+          { "id": "j10", "name": "Suzuki", "number": 1, "position": "GK", "x": 0.50, "y": 0.88, "avatar": "🙂", "events": [] }
+        ]
+      },
+      "bench": [
+        { "id": "alex", "number": 6, "name": "Alex Sandro", "position": "D", "subMinute": null, "replacedPlayer": null },
+        { "id": "bremer", "number": 14, "name": "Bremer", "position": "D", "subMinute": null, "replacedPlayer": null },
+        { "id": "danilo-santos", "number": 18, "name": "Danilo Santos", "position": "M", "subMinute": "90", "replacedPlayer": "Bruno Guimarães" },
+        { "id": "ederson", "number": 23, "name": "Ederson", "position": "GK", "subMinute": null, "replacedPlayer": null },
+        { "id": "endrick", "number": 19, "name": "Endrick", "position": "A", "subMinute": "46", "replacedPlayer": "Lucas Paquetá" },
+        { "id": "fabinho", "number": 17, "name": "Fabinho", "position": "M", "subMinute": "90", "replacedPlayer": "Casemiro" },
+        { "id": "martinelli", "number": 22, "name": "G. Martinelli", "position": "A", "subMinute": "66", "replacedPlayer": "Matheus Cunha" },
+        { "id": "igor", "number": 25, "name": "Igor Thiago", "position": "A", "subMinute": null, "replacedPlayer": null },
+        { "id": "neymar", "number": 10, "name": "Neymar", "position": "A", "subMinute": null, "replacedPlayer": null }
+      ],
+      "events": [
+        { "id": "e1", "minute": "29", "type": "Goal", "description": "K. Sano finishes from close range.", "teamName": "Japan" },
+        { "id": "e2", "minute": "46", "type": "Substitution", "description": "Endrick replaces Lucas Paquetá.", "teamName": "Brazil" },
+        { "id": "e3", "minute": "56", "type": "Goal", "description": "Casemiro equalizes after a set piece.", "teamName": "Brazil" },
+        { "id": "e4", "minute": "66", "type": "Substitution", "description": "G. Martinelli replaces Matheus Cunha.", "teamName": "Brazil" },
+        { "id": "e5", "minute": "90+6", "type": "Goal", "description": "G. Martinelli scores the winner.", "teamName": "Brazil" }
+      ],
+      "gameInfo": {
+        "localKickoff": "30 Jun 2026 at 00:00",
+        "utcKickoff": "2026-06-30 00:00",
+        "venue": "NRG Stadium",
+        "city": "Houston, Texas"
+      }
+    }
+  ]
+}

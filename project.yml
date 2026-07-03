@@ -1,0 +1,40 @@
+name: FootballTracker
+options:
+  bundleIdPrefix: com.codex
+  deploymentTarget:
+    iOS: "17.0"
+settings:
+  base:
+    SWIFT_VERSION: 6.0
+    MARKETING_VERSION: 1.0
+    CURRENT_PROJECT_VERSION: 1
+targets:
+  FootballTracker:
+    type: application
+    platform: iOS
+    sources:
+      - FootballTracker
+    resources:
+      - FootballTracker/Resources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.codex.FootballTracker
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: UIInterfaceOrientationPortrait
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+    info:
+      path: FootballTracker/App/Info.plist
+      properties:
+        CFBundleDisplayName: FootballTracker
+        UILaunchScreen: {}
+  FootballTrackerTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: FootballTrackerTests
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+    dependencies:
+      - target: FootballTracker

@@ -1,0 +1,90 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            String          @id @default(uuid()) @db.Char(36)
+  email         String          @unique @db.VarChar(255)
+  passwordHash  String          @map("password_hash") @db.VarChar(255)
+  displayName   String?         @map("display_name") @db.VarChar(100)
+  createdAt     DateTime        @default(now()) @map("created_at")
+  updatedAt     DateTime        @updatedAt @map("updated_at")
+  refreshTokens RefreshToken[]
+  favoriteTeams FavoriteTeam[]
+  favoriteLeagues FavoriteLeague[]
+
+  @@map("users")
+}
+
+model RefreshToken {
+  id        String    @id @default(uuid()) @db.Char(36)
+  userId    String    @map("user_id") @db.Char(36)
+  tokenHash String    @map("token_hash") @db.VarChar(255)
+  expiresAt DateTime  @map("expires_at")
+  revokedAt DateTime? @map("revoked_at")
+  createdAt DateTime  @default(now()) @map("created_at")
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("refresh_tokens")
+}
+
+model FavoriteTeam {
+  userId         String   @map("user_id") @db.Char(36)
+  externalTeamId String   @map("external_team_id") @db.VarChar(64)
+  leagueId       String?  @map("league_id") @db.VarChar(64)
+  createdAt      DateTime @default(now()) @map("created_at")
+  user           User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([userId, externalTeamId])
+  @@map("favorite_teams")
+}
+
+model FavoriteLeague {
+  userId           String   @map("user_id") @db.Char(36)
+  externalLeagueId String   @map("external_league_id") @db.VarChar(64)
+  createdAt        DateTime @default(now()) @map("created_at")
+  user             User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([userId, externalLeagueId])
+  @@map("favorite_leagues")
+}
+
+model MatchCache {
+  externalMatchId String   @id @map("external_match_id") @db.VarChar(64)
+  competitionId   String?  @map("competition_id") @db.VarChar(64)
+  payload         Json
+  status          String   @db.VarChar(20)
+  kickoffUtc      DateTime @map("kickoff_utc")
+  fetchedAt       DateTime @default(now()) @map("fetched_at")
+
+  @@map("match_cache")
+}
+
+/// Generic key-value cache for external API responses.
+/// cacheKey format: "leagues:{country}", "fixtures:team:{id}:{season}", "player:{id}:{season}", etc.
+model ApiCache {
+  cacheKey  String    @id @map("cache_key") @db.VarChar(300)
+  payload   Json
+  fetchedAt DateTime  @default(now()) @map("fetched_at")
+  /// null = never expires (used for past-season data that won't change)
+  expiresAt DateTime? @map("expires_at")
+
+  @@map("api_cache")
+}
+
+/// One row per outbound call to the external football API.
+/// Used to enforce the 100 calls/day free-plan limit.
+model ApiCallLog {
+  id        Int      @id @default(autoincrement())
+  endpoint  String   @db.VarChar(255)
+  params    String   @db.Text
+  calledAt  DateTime @default(now()) @map("called_at")
+
+  @@map("api_call_logs")
+}
+

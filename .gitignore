@@ -1,0 +1,101 @@
+# Xcode
+#
+# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+
+## User settings
+xcuserdata/
+*.xcworkspace
+!default.xcworkspace
+
+## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
+*.xcscmblueprint
+*.xccheckout
+
+## build state
+DerivedData/
+build/
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+## crashes
+*.crash
+
+## package manager
+*.fallback
+*.resolved
+*.swiftpm
+
+## Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+## CocoaPods
+Pods/
+Podfile.lock
+
+## Carthage
+Carthage/Build/
+
+## Accio
+Dependencies/
+.accio/
+
+## SPM
+.build/
+
+# Node.js
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+pids
+*.pid
+*.seed
+*.pid.lock
+
+lib-cov
+coverage
+*.lcov
+.nyc_output
+
+.grunt
+bower_components
+.lock-wscript
+build/Release
+node_modules/
+jspm_packages/
+typings/
+
+# Env files
+backend/.env
+backend/.env.test
+backend/.env.production
+
+# Mac OS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# XcodeGen
+FootballTracker.xcodeproj/
+
+# Antigravity IDE
+.agents/
+skills-lock.json
+build_log.txt
