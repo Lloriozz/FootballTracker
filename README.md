@@ -35,7 +35,7 @@ Here is a glimpse of FootballTracker in action!
 ## 🛠 Tech Stack
 
 **Frontend (iOS)**
-- **Swift & SwiftUI**: 100% written in modern Swift using the new `@Observable` macro (iOS 17+).
+- **Swift & SwiftUI**: written in modern Swift using the new `@Observable` macro (iOS 17+).
 - **Architecture**: MVVM (Model-View-ViewModel) with structured Dependency Injection.
 
 **Backend (Node.js)**
